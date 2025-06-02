@@ -1,4 +1,4 @@
-package com.aluracursos.challenge.servicio;
+package com.aluracursos.challenge.servicios;
 
 import java.io.IOException;
 import java.net.URI;
@@ -19,7 +19,7 @@ public class Peticion {
         URL = "https://v6.exchangerate-api.com/v6/"+clave+"/pair/"+base+"/"+convertir+"/";
     }
 
-    public void peticionar() throws IOException, InterruptedException {
+    public String peticionar() throws IOException, InterruptedException {
         /*
         Para hacer un request se utiliza una arquitectura Cliente-Servidor
         Somos el cliente que pide los datos al servidor.
@@ -39,8 +39,8 @@ public class Peticion {
                 .send(request, HttpResponse.BodyHandlers.ofString());
 
         /*
-        Imprimimos la respuesta de la petición
+        regresamos la respuesta de la petición
          */
-        System.out.println(response.body());
+        return response.body();
     }
 }
