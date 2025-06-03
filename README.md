@@ -1,8 +1,7 @@
 <h1>Challenge</h1>
 <p>Convertido de Mondedas</p>
 
-- Estado del proyecto: En construcción
+- Estado del proyecto: Terminado
 
-Este reto consiste en hacer un programa que
-permita hacer conversiones de un tipo de moneda
-a otra.
+<p>Este proyecto es un reto que consiste en consumir una API.<br>
+Para hacer una aplicación de conversión de moneda</p>
